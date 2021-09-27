@@ -9,4 +9,4 @@ git commit -am "${message}"
 
 git push -f origin master
 
-echo "${message}" | mail -s "数据备份成功" 2654749086@qq.com
+echo "${message}" | mail -s "数据备份成功" 291186144@qq.com

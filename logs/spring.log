@@ -1,0 +1,47 @@
+2021-09-27 00:41:01.136  INFO 6 --- [main] run.halo.app.Application                 : Starting Application v1.4.12 using Java 11.0.11 on 9ce31829d83e with PID 6 (/application/BOOT-INF/classes started by root in /application)
+2021-09-27 00:41:01.146  INFO 6 --- [main] run.halo.app.Application                 : No active profile set, falling back to default profiles: default
+2021-09-27 00:41:02.815  INFO 6 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-27 00:41:02.942  INFO 6 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 22 JPA repository interfaces.
+2021-09-27 00:41:03.947  INFO 6 --- [main] org.eclipse.jetty.util.log               : Logging initialized @4455ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-09-27 00:41:04.169  INFO 6 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8090
+2021-09-27 00:41:04.175  INFO 6 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 11.0.11+9
+2021-09-27 00:41:04.204  INFO 6 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2021-09-27 00:41:04.204  INFO 6 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2946 ms
+2021-09-27 00:41:04.453  INFO 6 --- [main] run.halo.app.config.HaloConfiguration    : Halo cache store load impl : [class run.halo.app.cache.InMemoryCacheStore]
+2021-09-27 00:41:04.593  INFO 6 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-27 00:41:04.839  INFO 6 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-27 00:41:05.431  INFO 6 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-27 00:41:05.490  INFO 6 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-27 00:41:05.531  INFO 6 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-27 00:41:05.741  INFO 6 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-27 00:41:06.968  INFO 6 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-27 00:41:06.983  INFO 6 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-27 00:41:07.686  INFO 6 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2021-09-27 00:41:07.686  INFO 6 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2021-09-27 00:41:07.687  INFO 6 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2021-09-27 00:41:07.698  INFO 6 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@388ad8aa{application,/,[file:///tmp/jetty-docbase.8090.7219897212182222803/, jar:file:/application/BOOT-INF/lib/springfox-swagger-ui-3.0.0.jar!/META-INF/resources],AVAILABLE}
+2021-09-27 00:41:07.698  INFO 6 --- [main] org.eclipse.jetty.server.Server          : Started @8207ms
+2021-09-27 00:41:08.437  INFO 6 --- [main] run.halo.app.handler.file.FileHandlers   : Registered 9 file handler(s)
+2021-09-27 00:41:11.137  INFO 6 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/api/admin/actuator'
+2021-09-27 00:41:11.188  INFO 6 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-27 00:41:11.188  INFO 6 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-27 00:41:11.189  INFO 6 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-09-27 00:41:11.214  INFO 6 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@72a8361b{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}
+2021-09-27 00:41:11.215  INFO 6 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8090 (http/1.1) with context path '/'
+2021-09-27 00:41:11.243  INFO 6 --- [main] run.halo.app.Application                 : Started Application in 10.789 seconds (JVM running for 11.752)
+2021-09-27 00:41:11.245  INFO 6 --- [main] run.halo.app.listener.StartedListener    : Starting migrate database...
+2021-09-27 00:41:11.329  INFO 6 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.5.1 by Redgate
+2021-09-27 00:41:11.338  INFO 6 --- [main] o.f.c.i.database.base.DatabaseType       : Database: jdbc:h2:file:~/.halo/db/halo (H2 1.4)
+2021-09-27 00:41:11.393  INFO 6 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Repair of failed migration in Schema History table "PUBLIC"."flyway_schema_history" not necessary. No failed migration detected.
+2021-09-27 00:41:11.413  INFO 6 --- [main] o.f.core.internal.command.DbRepair       : Successfully repaired schema history table "PUBLIC"."flyway_schema_history" (execution time 00:00.051s).
+2021-09-27 00:41:11.416  INFO 6 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.5.1 by Redgate
+2021-09-27 00:41:11.434  INFO 6 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.013s)
+2021-09-27 00:41:11.452  INFO 6 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 4
+2021-09-27 00:41:11.467  INFO 6 --- [main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2021-09-27 00:41:11.468  INFO 6 --- [main] run.halo.app.listener.StartedListener    : Migrate database succeed.
+2021-09-27 00:41:11.694  INFO 6 --- [main] run.halo.app.listener.StartedListener    : [94mHalo started at         http://116.62.5.147[0;39m
+2021-09-27 00:41:11.694  INFO 6 --- [main] run.halo.app.listener.StartedListener    : [94mHalo admin started at   http://116.62.5.147/admin[0;39m
+2021-09-27 00:41:11.694  INFO 6 --- [main] run.halo.app.listener.StartedListener    : [93mHalo has started successfully![0;39m
+2021-09-27 08:20:26.174  WARN 6 --- [qtp417118375-39] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-09-27 10:20:04.452  WARN 6 --- [Timer-0] run.halo.app.cache.AbstractCacheStore    : Cache key: [cache_lock_login_precheck] has been expired
+2021-09-27 10:20:04.453  WARN 6 --- [Timer-0] run.halo.app.cache.AbstractCacheStore    : Cache key: [cache_lock_login_auth] has been expired
